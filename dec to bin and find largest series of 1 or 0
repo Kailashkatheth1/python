@@ -1,0 +1,28 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    b=bin(n)
+    tep=b[2]
+    arr=[]
+    c=0
+    for x in b[2:]:
+        if (x==tep):
+            tep=x
+            c+=1
+        else:
+            arr.append(c)
+            c=0
+            tep=x
+            c+=1
+arr.sort()         
+print(arr[0])            
+            
