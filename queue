@@ -1,0 +1,10 @@
+from collections import deque
+queue=deque()
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append('a')
+x=queue.popleft()
+print(x)
+print(queue)
+
