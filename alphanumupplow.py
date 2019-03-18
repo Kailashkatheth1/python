@@ -1,27 +1,23 @@
 if __name__ == '__main__':
     s = input()
-    if s.isalnum()==False:
-        print('false\n'*5)
-       
-    
+    al=up=low=num=0
+    if s.isalnum():
+        print(True)
     else:
-        print('True')
-        print('True')
-        print('True')
-       
-    for a in s :
-        if a.islower()==True and a.isalpha()==True:
-            p=True
-            break
-        if a.islower()==False and a.isalpha()==True:
-            p=False 
-    print(p)         
-    for a in s :
-        if a.isupper()==True and a.isalpha()==True:
-            p=True
-            break
-        if a.isupper()==False and a.isalpha()==True:
-            p=False  
-    print(p)                   
+        print('False\n'*5)
 
-
+    for a in s:
+        if a.isalpha():
+            al+=1
+            if a.isupper():
+                up+=1
+            if a.islower():
+                low+=1
+        if a.isdigit():
+            num+=1
+    arr=[al,num,low,up]     
+    for x in arr:
+        if x>0:
+             print(True) 
+        else:
+             print(False)    
