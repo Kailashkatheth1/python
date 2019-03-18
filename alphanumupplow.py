@@ -13,14 +13,14 @@ if __name__ == '__main__':
         if a.islower()==True and a.isalpha()==True:
             p=True
             break
-        else:
+        if a.islower()==False and a.isalpha()==True:
             p=False 
     print(p)         
     for a in s :
         if a.isupper()==True and a.isalpha()==True:
             p=True
             break
-        else:
+        if a.isupper()==False and a.isalpha()==True:
             p=False  
     print(p)                   
 
