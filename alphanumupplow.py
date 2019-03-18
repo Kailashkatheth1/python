@@ -1,25 +1,27 @@
 if __name__ == '__main__':
     s = input()
-    if s.isalnum():
-        print('True')
-        print('True')
-        print('True')
+    if s.isalnum()==False:
+        print('false\n'*5)
+       
     
     else:
-        print('false')
-        print('false')
-        print('false')
+        print('True')
+        print('True')
+        print('True')
+       
     for a in s :
-        if a.islower()==True:
+        if a.islower()==True and a.isalpha()==True:
             p=True
             break
         else:
-             p=False 
+            p=False 
     print(p)         
     for a in s :
-        if a.isupper()==True:
+        if a.isupper()==True and a.isalpha()==True:
             p=True
             break
         else:
-             p=False  
+            p=False  
     print(p)                   
+
+
